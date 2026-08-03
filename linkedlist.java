@@ -9,6 +9,14 @@ public class Ll {
     public Ll(){
         this.size = 0;
     }
+     public void display(){
+        Node temp = head;
+        while(temp!=null){
+            System.out.print(temp.value + " -> ");
+            temp = temp.next;
+        }
+        System.out.println(" END ");
+    }
     public void InsertFirst(int val){
         Node node = new Node(val);
         node.next = head;
