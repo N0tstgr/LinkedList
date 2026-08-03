@@ -1,0 +1,16 @@
+package Basics;
+
+import java.util.LinkedList;
+
+public class main {
+    public static void main(String[] args) {
+        Ll list = new Ll();
+        list.InsertFirst(3);
+        list.InsertFirst(5);
+        list.InsertFirst(6);
+        list.InsertFirst(8);
+
+        list.display();
+    }
+
+}
