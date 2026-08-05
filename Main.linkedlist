@@ -9,7 +9,8 @@ public class main {
         list.InsertFirst(5);
         list.InsertFirst(6);
         list.InsertFirst(8);
-
+ list.insertLast(90);
+        list.insert(500,2);
         list.display();
     }
 
