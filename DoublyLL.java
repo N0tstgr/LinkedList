@@ -13,6 +13,27 @@ public void insertFirst(int val){
     }
     head = node;
     }
+        public Node find(int value){
+        Node node = head;
+        while(node!=null){
+            if(node.val == value){
+                return node;
+            }
+            node =  node.next;
+        }
+        return null;
+
+    }
+
+public void insert(int after, int val){
+    Node p = find(after);
+    if(p==null){
+        System.out.println("Does not Exist");
+        return;
+    }
+    Node node = new Node(val);
+    node.next = p.next;
+}
     private class Node{
     int value;
     Node next;
